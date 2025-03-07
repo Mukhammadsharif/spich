@@ -22,7 +22,8 @@ export function middleware(req) {
         pathname.startsWith('/sw.js') ||
         pathname.startsWith('/site.webmanifest') ||
         pathname.startsWith('/robots.txt') ||
-        pathname.startsWith('/sitemap.xml')
+        pathname.startsWith('/sitemap.xml') ||
+        pathname.startsWith('/videos/')
     ) {
         return NextResponse.next();  // Allow the request to continue without redirect
     }

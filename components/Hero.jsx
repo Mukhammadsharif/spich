@@ -3,9 +3,15 @@
 import {useTranslationClient} from "@/app/i18n/client";
 import HeroImage from '../app/assets/hero_image.png';
 import Image from "next/image";
+import QualityCard from "@/components/QualityCard";
 
 export default function Hero({lng}){
     const { t } = useTranslationClient(lng);
+    const cards = [
+        { backgroundColor: '#FF8413', title: "quality", description: "quality_text"},
+        { backgroundColor: '#000252', title: "natural", description: "natural_text"},
+        { backgroundColor: '#FF6B00', title: "sweet", description: "sweet_text"},
+    ]
 
     return (
         <div className={'hero'}>
@@ -20,7 +26,8 @@ export default function Hero({lng}){
                     </button>
                 </div>
 
-                <div className={'col-md-5'}>
+
+                <div className={'col-md-4 offset-md-1 offset-sm-0'}>
                     <Image
                         src={HeroImage}
                         alt="hero-image"
@@ -29,7 +36,14 @@ export default function Hero({lng}){
                 </div>
 
                 <div className={'col-md-2'}>
-
+                    {cards.map((card, index) => (
+                        <QualityCard key={index}
+                                     background={card.backgroundColor}
+                                     title={card.title}
+                                     description={card.description}
+                                     lng={lng}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
