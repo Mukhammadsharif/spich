@@ -1,0 +1,105 @@
+@import url('./fonts.css');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #000252;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  background: #000252;
+  padding: 15px;
+}
+
+.header-nav {
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.header-link {
+  color: #000252;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.header-link.active {
+  color: #FF6B00;
+}
+
+.nav-container {
+  padding: 0 30px;
+}
+
+.header-logo {
+    width: 128px;
+    height: 70px;
+}
+
+.language-switcher {
+  width: 80px;
+  height: 36px;
+  top: 11px;
+  border-radius: 20px;
+  border: 0.5px solid #000252;
+  font-family: 'Gilroy', sans-serif !important;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 5px;
+}
+
+.header-button {
+  height: 50px;
+  border-radius: 100px;
+  gap: 10px;
+  background: #FF8413;
+  color: white;
+  padding: 0 35px;
+  border: none;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.hero {
+  background: #FFF8EF;
+  border-radius: 25px;
+  padding: 80px 25px 25px 25px;
+  margin-top: 10px;
+}
+
+.header-image {
+  margin-bottom: -25px !important;
+}
+
+.hero-main-text {
+  color: #000252;
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.hero-sub-text {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Gilroy', sans-serif !important;
+}
