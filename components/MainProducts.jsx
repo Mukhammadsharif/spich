@@ -2,7 +2,7 @@
 
 import {useTranslationClient} from "@/app/i18n/client";
 import Image from "next/image";
-import Mask from '../app/assets/mask_colored.png'
+import Mask from '../app/assets/mask_white.png'
 import ProductCard from "@/components/ProductsCard";
 
 import onionImage from '../app/assets/products_onion.png';
@@ -20,26 +20,28 @@ export default function MainProducts({lng}){
 
     return (
         <div className={'products'}>
-            <h1 className={'product-title'}>{t('our_products').toUpperCase()}</h1>
-            <Image
-                src={Mask}
-                alt="mask"
-                className="mask"
-            />
+            <div className={'d-flex flex-row align-items-center'}>
+                <h1 className={'product-title'}>{t('our_products').toUpperCase()}</h1>
+                <Image
+                    src={Mask}
+                    alt="mask"
+                    className="mask"
+                />
+            </div>
 
-            <div className={'row mt-5'}>
+            <div className={'d-flex flex-row justify-content-between align-items-center flex-wrap mt-5'}>
                 {products.map((product, index) => (
                     <ProductCard product={product} key={index} lng={lng} />
                 ))}
 
-                <div className="col-md-2 mt-4">
+                <div className="col-lg-2 col-md-2 col-sm-6 mt-4">
                     <div className={'product-card-additional'}>
                         <p className="product-card-additional-name">{t('all_products')?.toUpperCase()}</p>
-                        <Image
-                            src={Mask}
-                            alt="mask"
-                            className="product-card-additional-mask"
-                        />
+                        {/*<Image*/}
+                        {/*    src={Mask}*/}
+                        {/*    alt="mask"*/}
+                        {/*    className="product-card-additional-mask"*/}
+                        {/*/>*/}
                         <Image
                             src={PlusIcon}
                             alt="product-plus-icon"

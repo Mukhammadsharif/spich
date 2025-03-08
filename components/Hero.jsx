@@ -16,7 +16,7 @@ export default function Hero({lng}){
     return (
         <div className={'hero'}>
             <div className={'row'}>
-                <div className={'col-md-5'}>
+                <div className={'col-lg-5 col-md-12'}>
                     <h1 className={'hero-main-text'}>{t('hero_main_text').toUpperCase()}</h1>
 
                     <p className={'hero-sub-text'}>{t('hero_sub_text')}</p>
@@ -27,7 +27,7 @@ export default function Hero({lng}){
                 </div>
 
 
-                <div className={'col-md-4 offset-md-1 offset-sm-0'}>
+                <div className={'col-lg-4'}>
                     <Image
                         src={HeroImage}
                         alt="hero-image"
@@ -35,7 +35,7 @@ export default function Hero({lng}){
                     />
                 </div>
 
-                <div className={'col-md-2'}>
+                <div className={'col-lg-3'}>
                     {cards.map((card, index) => (
                         <QualityCard key={index}
                                      background={card.backgroundColor}

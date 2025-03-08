@@ -21,12 +21,14 @@ export default function WithUs({lng}){
     return (
         <div className={'with-us'}>
             <div className={'d-flex flex-row align-items-center justify-content-between'}>
-                <h1 className={'product-title'} style={{color: '#000252'}}>{t('with_us').toUpperCase()}</h1>
-                <Image
-                    src={Mask}
-                    alt="mask"
-                    className="mask"
-                />
+                <div className={'d-flex flex-row align-items-center'}>
+                    <h1 className={'product-title'} style={{color: '#000252'}}>{t('with_us').toUpperCase()}</h1>
+                    <Image
+                        src={Mask}
+                        alt="mask"
+                        className="mask"
+                    />
+                </div>
 
                 <button type="button" className="header-button mx-2 mb-2">
                     {t('about').toUpperCase()}

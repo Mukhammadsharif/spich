@@ -1,0 +1,47 @@
+"use client";
+
+import {useTranslationClient} from "@/app/i18n/client";
+import Image from "next/image";
+import Mask from '../app/assets/mask_colored.png'
+import VideoPlayer from "@/components/VideoPlayer";
+import StaticsCard from "@/components/StaticsCard";
+
+export default function AboutUs({lng}){
+    const { t } = useTranslationClient(lng);
+    const statistics = [
+        { title: '100+', description: "statics_first" },
+        { title: '200+', description: "statics_second" },
+        { title: '8+', description: "statics_third" },
+        { title: '100 М', description: "statics_fourth" },
+    ];
+
+    return (
+        <div className={'products'}>
+            <div className={'d-flex align-items-center flex-row'}>
+                <h1 className={'product-title'}>{t('about').toUpperCase()}</h1>
+                <Image
+                    src={Mask}
+                    alt="mask"
+                    className="mask"
+                />
+            </div>
+
+            <div className={'row mb-4'}>
+                <div className={'col-lg-6'}>
+                    <span className={'about-us-text'}>{t('about_main_text_first')}</span>
+                </div>
+                <div className={'col-lg-6'}>
+                    <span className={'about-us-text'}>{t('about_main_text_second')}</span>
+                </div>
+            </div>
+
+            <VideoPlayer />
+
+            <div className={'row mt-5'}>
+                {statistics.map((statistic, index) => (
+                    <StaticsCard item={statistic} key={index} lng={lng} index={index} />
+                ))}
+            </div>
+        </div>
+    )
+}

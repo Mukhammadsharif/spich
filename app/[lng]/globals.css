@@ -48,6 +48,11 @@ body {
 
 .nav-container {
   padding: 0 30px;
+  display: block;
+}
+
+.nav-container-mobile {
+  display: none;
 }
 
 .header-logo {
@@ -157,22 +162,20 @@ body {
 }
 
 .mask {
-  position: absolute;
   width: 100px;
   height: 100px;
-  top: 0;
-  left: 12%;
+  margin-top: -50px;
 }
 
 .product-image {
-  width: 100%;
-  height: 350px;
+  width: 220px;
+  height: 250px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
 
 .product-card-footer {
-  width: 100%;
+  width: 220px;
   padding: 10px ;
   background-color: #FFF8EF;
   border-bottom-left-radius: 24px;
@@ -190,12 +193,12 @@ body {
 .product-card {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .product-plus-icon {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   align-self: center;
   cursor: pointer;
 }
@@ -209,13 +212,14 @@ body {
   align-items: center;
   cursor: pointer;
   position: relative;
-  height: 410px;
+  height: 310px;
+  width: 220px;
 }
 
 .product-card-additional-name {
   color: #000252;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 700;
   font-family: 'Gilroy', sans-serif !important;
   text-align: center;
@@ -231,7 +235,8 @@ body {
 }
 
 .with-us-image {
-  /*width: 100%;*/
+  width: 100%;
+  height: 100%;
 }
 
 .with-us-card {
@@ -293,4 +298,745 @@ body {
 .play-button svg {
   width: 60px;
   height: 60px;
+}
+
+.statics-card {
+  background-color: #FFF8EF;
+  border-radius: 24px;
+  height: 150px;
+  padding: 10px;
+}
+
+.statics-card-title {
+  color: #000252;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.statics-card-description {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+
+.news-card-title {
+  color: #000252;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.news-card-title-container {
+  height: 70px;
+}
+
+.question-card {
+  background-color: #FFF8EF;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.open-close-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.question-title {
+  color: #000252;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.question-answer {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.contacts-main {
+  border-radius: 24px;
+  border: 1px dashed #000252;
+  padding: 15px;
+}
+
+.contacts-title {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.contacts-text {
+  color: #000252;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.contacts-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-nav {
+  padding: 20px 10px;
+  border-radius: 25px;
+  background: #000252;
+  border: 1px solid #FFF8EF;
+}
+
+.footer-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.footer-link.active {
+  color: #FF6B00;
+}
+
+.catalog-image {
+  width: 220px;
+  height: 200px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.about-us-text {
+  color: #C9C9C9;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Gilroy', sans-serif !important;
+}
+
+.not-found-image {
+  width: 98vw;
+  height: 92vh;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.header-button {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1450px) and (min-width: 1200px) {
+  .product-image {
+    width: 180px;
+    height: 160px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .product-card-footer {
+    width: 180px;
+    padding: 10px ;
+    background-color: #FFF8EF;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .product-card-additional {
+    border-radius: 24px;
+    background-color: #FFF8EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    height: 220px;
+    width: 180px;
+  }
+
+  .header-link {
+    color: #000252;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .header-image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .hero-main-text {
+    color: #000252;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .hero-sub-text {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .quality-image-container {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  .quality-card-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .quality-card-description {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .product-title {
+    color: #FFF8EF;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .mask {
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
+  }
+
+  .news-card-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .with-us-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFF8EF;
+    padding: 0 5px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-color: #000252;
+    border-left-color: #000252;
+    border-right-color: #FFF8EF;
+    border-top-color: #FFF8EF;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .question-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .question-answer {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .open-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-card-name {
+    color: #000252;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .product-card-additional-name {
+    color: #000252;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+    text-align: center;
+    padding: 0 25%;
+  }
+
+  .product-plus-icon {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .product-image {
+    width: 140px;
+    height: 120px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .product-card-footer {
+    width: 140px;
+    padding: 10px;
+    background-color: #FFF8EF;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .product-card-additional {
+    border-radius: 24px;
+    background-color: #FFF8EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    height: 180px;
+    width: 140px;
+  }
+
+  .header-link {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .header-image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .hero-main-text {
+    color: #000252;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .hero-sub-text {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .quality-image-container {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  .quality-card-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .quality-card-description {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .product-title {
+    color: #FFF8EF;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .mask {
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+  }
+
+  .news-card-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .with-us-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFF8EF;
+    padding: 0 5px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-color: #000252;
+    border-left-color: #000252;
+    border-right-color: #FFF8EF;
+    border-top-color: #FFF8EF;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .question-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .question-answer {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .open-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-card-name {
+    color: #000252;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .product-card-additional-name {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+    text-align: center;
+    padding: 0 25%;
+  }
+
+  .product-plus-icon {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 300px) {
+  .product-image {
+    width: 130px;
+    height: 110px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .catalog-image {
+    width: 130px;
+    height: 110px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .product-card-footer {
+    width: 130px;
+    padding: 5px ;
+    background-color: #FFF8EF;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .product-card-additional {
+    border-radius: 24px;
+    background-color: #FFF8EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    height: 160px;
+    width: 130px;
+  }
+
+  .header-link-mobile {
+    color: #000252;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .header-link-mobile.active {
+    color: #FF6B00;
+  }
+
+  .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .header-image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .hero-main-text {
+    color: #000252;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .hero-sub-text {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .quality-image-container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  .quality-card-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .quality-image {
+    width: 15px;
+    height: 15px;
+  }
+
+  .quality-card-description {
+    color: #999999;
+    font-size: 6px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .product-title {
+    color: #FFF8EF;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .mask {
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+  }
+
+  .news-card-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .news-card-title-container {
+    height: 50px;
+  }
+
+  .with-us-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFF8EF;
+    padding: 0 5px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-color: #000252;
+    border-left-color: #000252;
+    border-right-color: #FFF8EF;
+    border-top-color: #FFF8EF;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .question-title {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .question-answer {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .open-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-card-name {
+    color: #000252;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .product-card-additional-name {
+    color: #000252;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+    text-align: center;
+    padding: 0 25%;
+  }
+
+  .product-plus-icon {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .nav-container-mobile {
+    display: block;
+  }
+
+  .burger {
+    height: 15px;
+    width: 30px;
+  }
+
+  .language-switcher {
+    width: 65px;
+    height: 40px;
+    top: 11px;
+    border-radius: 20px;
+    border: 0.5px solid #000252;
+    font-family: 'Gilroy', sans-serif !important;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 5px;
+  }
+
+  .header-button {
+    height: 40px;
+    border-radius: 100px;
+    gap: 10px;
+    background: #FF8413;
+    color: white;
+    padding: 0 15px;
+    border: none;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .header-logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .header-button {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif !important;
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    /*padding-bottom: 56.25%; !* 16:9 Aspect ratio *!*/
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
 }

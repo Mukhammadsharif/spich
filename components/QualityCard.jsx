@@ -7,7 +7,7 @@ export default function QualityCard({background, title, description, lng}) {
     const { t } = useTranslationClient(lng);
     return (
         <div className={'row align-items-center mt-4'}>
-            <div className={'col-md-3'}>
+            <div className={'col-lg-3'}>
                 <div className={'quality-image-container'} style={{backgroundColor: background}}>
                     <Image
                         src={QualityImage}
@@ -16,7 +16,7 @@ export default function QualityCard({background, title, description, lng}) {
                     />
                 </div>
             </div>
-            <div className={'col-md-9'}>
+            <div className={'col-lg-9'}>
                 <span className={'quality-card-title'}>{t(title).toUpperCase()}</span><br/>
                 <span className={'quality-card-description'}>{t(description)}</span>
             </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@yandex/ymaps3-types": "^1.0.16029232",
     "accept-language": "^3.0.20",
     "bootstrap": "5.3.3",
     "i18next": "^24.2.2",
