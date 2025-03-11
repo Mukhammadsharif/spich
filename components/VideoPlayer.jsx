@@ -32,7 +32,7 @@ export default function VideoPlayer() {
                     onPause={() => setIsPlaying(false)}
                 >
                     <source
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/hd_1920_1080_30fps.mp4`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/ozvuchka.mp4`}
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
