@@ -9,6 +9,8 @@ import onionImage from '../app/assets/products_onion.png';
 import saltyImage from '../app/assets/products_salty.png';
 import cheeseImage from '../app/assets/products_cheese.png';
 import PlusIcon from '../app/assets/plus_icon.png';
+import Modal from "@/components/Modal";
+import {useState} from "react";
 
 export default function MainProducts({lng}){
     const { t } = useTranslationClient(lng);
