@@ -16,6 +16,7 @@ export function middleware(req) {
     if (
         pathname.startsWith('/favicon.svg') ||
         pathname.startsWith('/favicon.ico') ||
+        pathname.startsWith('/favicon.png') ||
         pathname.startsWith('/assets') ||
         pathname.startsWith('/_next/static') ||
         pathname.startsWith('/_next/image') ||

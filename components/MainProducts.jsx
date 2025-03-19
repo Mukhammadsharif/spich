@@ -15,9 +15,9 @@ import {useState} from "react";
 export default function MainProducts({lng}){
     const { t } = useTranslationClient(lng);
     const products = [
-        { name: 'green_onion', image: onionImage },
-        { name: 'salty', image: saltyImage },
-        { name: 'with_cheese', image: cheeseImage },
+        { name: 'green_onion', image: onionImage, desc: 'green_onion_desc', comp: 'green_onion_comp' },
+        { name: 'salty', image: saltyImage, desc: 'salty_desc', comp: 'salty_comp' },
+        { name: 'with_cheese', image: cheeseImage, desc: 'with_cheese_desc', comp: 'with_cheese_comp' },
     ];
 
     return (

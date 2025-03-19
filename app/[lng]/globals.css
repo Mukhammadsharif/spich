@@ -185,7 +185,7 @@ body {
 .product-card-name {
   color: #000252;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   font-family: 'Gilroy', sans-serif !important;
 }
@@ -471,6 +471,17 @@ body {
   right: 15px;
 }
 
+.comment-image {
+  width: 50px;
+  height: 50px;
+}
+
+.comment-card {
+  background-color: #FFF8EF;
+  border-radius: 24px;
+  padding: 10px;
+  height: auto;
+}
 
 @media screen and (max-width: 1450px) and (min-width: 1200px) {
   .product-image {
@@ -620,7 +631,7 @@ body {
   .product-card-name {
     color: #000252;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     font-family: 'Gilroy', sans-serif !important;
   }
@@ -792,7 +803,7 @@ body {
   .product-card-name {
     color: #000252;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 700;
     font-family: 'Gilroy', sans-serif !important;
   }
@@ -983,7 +994,7 @@ body {
   .product-card-name {
     color: #000252;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 700;
     font-family: 'Gilroy', sans-serif !important;
   }

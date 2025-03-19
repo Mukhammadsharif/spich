@@ -8,6 +8,7 @@ import onionImage from '../app/assets/with_us_onion.svg';
 import saltyImage from '../app/assets/with_us_salty.svg';
 import cheeseImage from '../app/assets/with_us_cheese.svg';
 import WithUsCard from "@/components/WithUsCard";
+import {useRouter} from "next/navigation";
 
 export default function WithUs({lng}){
     const { t } = useTranslationClient(lng);
@@ -17,6 +18,8 @@ export default function WithUs({lng}){
         { backgroundColor: '#000252', title: "natural", description: "natural_text", image: saltyImage},
         { backgroundColor: '#FF6B00', title: "sweet", description: "sweet_text", image: cheeseImage },
     ]
+
+    const router = useRouter();
 
     return (
         <div className={'with-us'}>
@@ -30,7 +33,7 @@ export default function WithUs({lng}){
                     />
                 </div>
 
-                <button type="button" className="header-button mx-2 mb-2">
+                <button type="button" className="header-button mx-2 mb-2" onClick={() => router.push('/about')}>
                     {t('about').toUpperCase()}
                 </button>
             </div>

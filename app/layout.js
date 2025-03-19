@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Spich",
   description: "Spich next js application",
+  icons: {
+      icon: '/favicon.png',
+  }
 };
 
 export async function generateStaticParams() {

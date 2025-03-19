@@ -17,14 +17,14 @@ import CatalogCard from "@/components/CatalogCard";
 export default function Products({lng}){
     const { t } = useTranslationClient(lng);
     const catalog = [
-        { name: 'green_onion', image: onionImage, backgroundColor: "#119D49" },
-        { name: 'bbq', image: bbqImage, backgroundColor: "#424242" },
-        { name: 'with_cheese', image: cheeseImage, backgroundColor: "#F2B148" },
-        { name: 'laym', image: laymImage, backgroundColor: "#5BA65A" },
-        { name: 'paprika', image: paprikaImage, backgroundColor: "#A31E21" },
-        { name: 'salty', image: saltyImage,backgroundColor: "#0F4C95" },
-        { name: 'smetanaZelen', image: smetanaZelenImage, backgroundColor: "#302664" },
-        { name: 'smetanaOnion', image: smetanaOnionImage, backgroundColor: "#173C1C" },
+        { name: 'green_onion', image: onionImage, backgroundColor: "#119D49", desc: 'green_onion_desc', comp: 'green_onion_comp'},
+        { name: 'bbq', image: bbqImage, backgroundColor: "#424242", desc: 'bbq_desc', comp: 'bbq_comp' },
+        { name: 'with_cheese', image: cheeseImage, backgroundColor: "#F2B148", desc: 'with_cheese_desc', comp: 'with_cheese_comp' },
+        { name: 'laym', image: laymImage, backgroundColor: "#5BA65A", desc: 'laym_desc', comp: 'laym_comp' },
+        { name: 'paprika', image: paprikaImage, backgroundColor: "#A31E21", desc: 'paprika_desc', comp: 'paprika_comp' },
+        { name: 'salty', image: saltyImage,backgroundColor: "#0F4C95", desc: 'salty_desc', comp: 'salty_comp' },
+        { name: 'smetanaZelen', image: smetanaZelenImage, backgroundColor: "#302664", desc: 'smetanaZelen_desc', comp: 'smetanaZelen_comp' },
+        { name: 'smetanaOnion', image: smetanaOnionImage, backgroundColor: "#173C1C", desc: 'smetanaOnion_desc', comp: 'smetanaOnion_comp' },
     ];
 
     return (

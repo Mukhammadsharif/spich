@@ -6,6 +6,7 @@ import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 import AboutHero from "@/components/AboutHero";
 import AboutUs from "@/components/AboutUs";
+import Comments from "@/components/Comments";
 
 export default async function Home({ params }) {
   const { lng } = await params;
@@ -16,6 +17,7 @@ export default async function Home({ params }) {
         <AboutHero lng={lng} />
         <AboutUs lng={lng} />
         <WithUs lng={lng} />
+        <Comments lng={lng} />
         <Contacts lng={lng} />
         <Footer lng={lng} />
     </div>

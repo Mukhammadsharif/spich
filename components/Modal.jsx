@@ -96,9 +96,9 @@ export default function Modal({ modalVisible, setModalVisible, product, lng, mod
                                         {t(product.name).toUpperCase()}
                                     </p>
                                     <p className="contacts-title">{t("description")}:</p>
-                                    <p className="my-modal-text">{t("classic_desc")}</p>
+                                    <p className="my-modal-text">{t(product?.desc)}</p>
                                     <p className="contacts-title">{t("composition")}:</p>
-                                    <p className="my-modal-text">{t("classic_comp")}</p>
+                                    <p className="my-modal-text">{t(product?.comp)}</p>
                                 </div>
                             </div>
                         </div>

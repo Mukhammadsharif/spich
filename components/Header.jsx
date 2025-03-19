@@ -4,7 +4,7 @@ import Burger from "../app/assets/burger_icon.png";
 import {useTranslationClient} from "@/app/i18n/client";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
+import {usePathname, useRouter} from 'next/navigation';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import {useState} from "react";
 
@@ -12,6 +12,11 @@ export default function Header({ lng }) {
     const { t } = useTranslationClient(lng);
     const [open, setOpen] = useState(false);
     const pathname = usePathname();
+    const router = useRouter();
+
+    const goToContacts = () => {
+        router.push("/contacts");
+    };
 
     return (
         <header className="header-nav bg-white mb-3">
@@ -48,7 +53,7 @@ export default function Header({ lng }) {
                         <div className="d-flex align-items-center justify-content-end">
                             <LanguageSwitcher lng={lng} t={t}/>
 
-                            <button type="button" className="header-button mx-2 mb-2">
+                            <button onClick={goToContacts} type="button" className="header-button mx-2 mb-2">
                                 {t('connect').toUpperCase()}
                             </button>
                         </div>

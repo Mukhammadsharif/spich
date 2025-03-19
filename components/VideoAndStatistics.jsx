@@ -10,9 +10,9 @@ export default function VideoAndStatistics({lng}){
     const { t } = useTranslationClient(lng);
     const statistics = [
         { title: '100+', description: "statics_first" },
-        { title: '200+', description: "statics_second" },
+        { title: '10,000,000+', description: "statics_second" },
         { title: '8+', description: "statics_third" },
-        { title: '100 М', description: "statics_fourth" },
+        { title: '1600 М', description: "statics_fourth" },
     ];
 
     return (

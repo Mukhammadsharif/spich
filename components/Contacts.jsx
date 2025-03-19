@@ -28,14 +28,19 @@ export default function Contacts({ lng }) {
                     <div className={'col-lg-12 mt-5'}>
                         <div className={'contacts-main'}>
                             <span className={'contacts-title'}>{t('phone')}:</span><br/>
-                            <span className={'contacts-text'}>+998 70 200 77 70</span><br/><br/>
+                            <span className={'contacts-text'}>
+                                <a href="tel:+998 70 200 77 70" rel="noopener noreferrer"
+                                   style={{textDecoration: 'none', color: '#000252'}}>
+                                    +998 70 200 77 70
+                                </a>
+                            </span><br/><br/>
 
                             <span className={'contacts-title'}>{t('address')}:</span><br/>
                             <span className={'contacts-text'}>{t('address_text')}</span><br/><br/>
 
                             <span className={'contacts-title'}>{t('socials')}:</span><br/>
                             <div className={'d-flex flex-row justify-content-between w-50'}>
-                                <a href="mailto:example@email.com" target="_blank" rel="noopener noreferrer">
+                                <a href="mailto:spichuz@email.com" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={Mail}
                                         alt="Email"
@@ -43,7 +48,7 @@ export default function Contacts({ lng }) {
                                     />
                                 </a>
 
-                                <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                                <a href="https://facebook.com/spichuz" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={Facebook}
                                         alt="Facebook"
@@ -51,7 +56,7 @@ export default function Contacts({ lng }) {
                                     />
                                 </a>
 
-                                <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                <a href="https://instagram.com/spichuz" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={Instagram}
                                         alt="Instagram"
@@ -59,7 +64,7 @@ export default function Contacts({ lng }) {
                                     />
                                 </a>
 
-                                <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+                                <a href="https://t.me/spichuz" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={Telegram}
                                         alt="Telegram"

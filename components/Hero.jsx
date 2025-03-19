@@ -4,6 +4,7 @@ import {useTranslationClient} from "@/app/i18n/client";
 import HeroImage from '../app/assets/hero_image.png';
 import Image from "next/image";
 import QualityCard from "@/components/QualityCard";
+import {useRouter} from "next/navigation";
 
 export default function Hero({lng}){
     const { t } = useTranslationClient(lng);
@@ -12,6 +13,7 @@ export default function Hero({lng}){
         { backgroundColor: '#000252', title: "natural", description: "natural_text"},
         { backgroundColor: '#FF6B00', title: "sweet", description: "sweet_text"},
     ]
+    const router = useRouter();
 
     return (
         <div className={'hero'}>
@@ -21,7 +23,7 @@ export default function Hero({lng}){
 
                     <p className={'hero-sub-text'}>{t('hero_sub_text')}</p>
 
-                    <button type="button" className="header-button mx-2 mb-2">
+                    <button type="button" className="header-button mx-2 mb-2" onClick={() => router.push("/catalog")}>
                         {t('additional').toUpperCase()}
                     </button>
                 </div>
