@@ -29,9 +29,9 @@ export default function Contacts({ lng }) {
                         <div className={'contacts-main'}>
                             <span className={'contacts-title'}>{t('phone')}:</span><br/>
                             <span className={'contacts-text'}>
-                                <a href="tel:+998 70 200 77 70" rel="noopener noreferrer"
+                                <a href="tel:+998 71 500 77 70" rel="noopener noreferrer"
                                    style={{textDecoration: 'none', color: '#000252'}}>
-                                    +998 70 200 77 70
+                                    +998 71 500 77 70
                                 </a>
                             </span><br/><br/>
 
